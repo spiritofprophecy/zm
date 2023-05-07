@@ -1,0 +1,104 @@
+/* default styles for all screen sizes */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+body {
+  background-image: url('studyImage1.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -5;
+}
+
+.header {
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, #099ddf, #023e90);
+}
+
+.container {
+  display: flex;
+  flex-direction:column;
+}
+
+.container .first-study {
+  margin: 100px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.study-image-container {
+  width: 300px;
+}
+
+.study-image {
+  width: 100%;
+}
+
+.study-info {
+  color: white;
+  font-size: 30px;
+}
+
+/* styles for screens with a width of 800 pixels or more */
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex;
+   
+  }
+
+  .first-study {
+    margin: 100px;
+  }
+
+  .study-image-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .study-info {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+.home-icon{
+  margin-left:60px;
+  font-size:35px;
+  
+}
+#hamburg-menu{
+  border:none;
+  background: transparent;
+}
+.menu{
+  color:white;
+  font-size:35px;
+}
+.tracks{
+  position:fixed;
+  background-color: white;
+  top:0%;
+  left:43%;
+  right:0;
+  padding:10px;
+  border-radius:20px;
+  background-image:linear-gradient(to bottom, #9ae0f1, white);
+  color:white;
+  transition:0.9s;
+  z-index:100;
+  display:none;
+}
