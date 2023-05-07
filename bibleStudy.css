@@ -1,8 +1,7 @@
 /* default styles for all screen sizes */
-* {
-  padding: 0;
-  margin: 0;
-}
+
+
+
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -18,6 +17,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
+  padding:0;
+  margin:0;
 }
 
 .header {
