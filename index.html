@@ -1,66 +1,563 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--####################--->
-   <!--- GOOGLE FONTS LINKES 
-    <!--####################--->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
-    <title>Thee Truth</title>
-    <style>
-    *{
-      padding: 0;
-      margin: 0;
-    }
-    p{
-      font-family:Tangerine,arial;
-      font-size: 32px;
-    }
- .container{
-    height: 100vh;
-    background-image: linear-gradient(to left bottom, #32c9ef, #0e6285);
- }
-.container .main-content{
-    display: flex;
-    background-color: white;
-    
-  }
-  .container .main-content div{
-    width:100px;
-    height:100px;
-    border:2px solid black;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(to top, rgb(97,228,187),rgb(28,112,86));
-    color:white;
-    font-weight: bold;
-    border-radius: 6px;
-  }
-    </style>
-  </head>
-  <body>
-   <div class="container">
-     <div class="header">
-      <h1> The spirit of prophecy</h1>
-        
-     </div>
-     <div class="main-content">
-       <div><a href="bibleStudy.html">Bible study</a></div>
-       <div>Questions</div>
-       
-       <div>contact us</div>
-       <div>about website</div>
 
-     </div>
-       
+<html lang="en">
+
+  <head>
+
+   
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> 
+
+  
+
+    <title>Spirit of prophecy</title>
+
+ 
+
     
+
+      <style>
+
+.material-symbols-outlined {
+
+  font-variation-settings:
+
+  'FILL' 0,
+
+  'wght' 400,
+
+  'GRAD' 0,
+
+  'opsz' 48
+
+}
+
+body {
+
+  padding:0;
+
+  margin:0;
+
+  font-family: ariel, serif;
+
+}
+
+    .fa {
+
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+
+  }
+
+      .header {
+
+  background-color: #fff;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  position: fixed;
+
+  top: 0;
+
+  width: 100%;
+
+  z-index: 9999;
+
+}
+
+.container {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  max-width: 90%;
+
+  margin: 0 auto;
+
+  padding: 10px;
+
+}
+
+.logo {
+
+  width:109px;
+
+}
+
+.menu ul {
+
+  display: flex;
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+.menu li {
+
+  margin-right: 10px;
+
+}
+
+.menu li:last-child {
+
+  margin-right: 0;
+
+}
+
+.menu a {
+
+  text-decoration: none;
+
+  color: #333;
+
+  font-size: 14px;
+
+}
+
+.footer {
+
+  background-color: #333;
+
+  color: #fff;
+
+  padding: 50px 0;
+
+}
+
+.container {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+}
+
+.row {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+}
+
+.col {
+
+  flex-basis: 33.33%;
+
+  padding: 0 20px;
+
+}
+
+.col h3 {
+
+  margin-bottom: 20px;
+
+}
+
+.col p {
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  margin-bottom: 30px;
+
+}
+
+.social-media {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+.social-media li {
+
+  display: inline-block;
+
+  margin-right: 10px;
+
+}
+
+.social-media li:last-child {
+
+  margin-right: 0;
+
+}
+
+.social-media a {
+
+  color: #fff;
+
+  font-size: 20px;
+
+}
+
+.fa {
+
+  display: inline-block;
+
+  font-size: 1.5em;
+
+  height: 1.5em;
+
+  line-height: 1.5;
+
+  margin-right: 5px;
+
+  text-align: center;
+
+  width: 1.5em;
+
+}
+
+ .post {
+
+        border: 1px solid #ddd;
+
+        border-radius: 0.5rem;
+
+        margin-bottom: 2rem;
+
+        padding: 1rem;
+
+        margin:1rem;
+
+      }
+
+      .post .author {
+
+        display: flex;
+
+        align-items: center;
+
+        margin-bottom: 1rem;
+
+      }
+
+      .post .author img {
+
+       width:50px;
+
+        border-radius: 50%;
+
+        margin-right: 1rem;
+
+      }
+
+      .post .author h2 {
+
+        margin: 0;
+
+        font-size: 1.5rem;
+
+      }
+
+      .post .content p {
+
+        margin-top: 0;
+
+      }
+
+      .post .actions {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        margin-top: 1rem;
+
+      }
+
+      .post .actions a {
+
+        color: #3b5998;
+
+        text-decoration: none;
+
+      }
+
+      
+
+      .img{
+
+        width:100%;
+
+       
+
+      }
+
+      .count{
+
+        color:blue;
+
+      }
+
+      #commentCon{
+
+        width:300px;
+
+        height:200px;
+
+        position: absolute;
+
+        top:60%;
+
+        left:10%;
+
+        box-shadow: 0px 0px 6px black;
+
+        display:flex;
+
+        flex-direction: column;
+
+        background: white;
+
+        display: none;
+
+      }
+
+      .commentRoot{
+
+        width: 200px;
+
+        height: 100px;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <header class="header">
+
+  <div class="container">
+
+    <div class="logo"><img class="img"src="logo2.jpg" alt=""></div>
+
+    <nav class="menu">
+
+      <ul>
+
+        <li><a href="bibleStudy.html">Study</a></li>
+
+        <li><a href="law.html"><span class="material-symbols-outlined">
+
+📖
+
+</span></a></li>
+
+        <liid=""><a href="notAvailable.html">Services</a></li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+  
+
+  <!--bzjzjz-->
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!---->
+
+</header>
+
+  <div style="margin-top:100px"class="post">
+
+        <div class="author">
+
+          <img class="img"src="unknown.png"> 
+
+          <h2>Joseph Chilinda</h2>
+
+        </div>
+
+        <div class="content">
+
+          <p> That everyone who thirsteth for the truth may obtain it, this tract is given free of charge.  It levies one exaction, the soul's obligation to itself to prove all things and hold fast that which is good.  The only strings attached to this free proffer are the golden strands of Eden and the crimson cords of Calvary -- the ties that bind.  Contact me if you want one from where ever you are
+
+          </p>
+
+        </div>
+
+       
+
+    <div class="actions">
+
+      <span>1 hour ago</span>
+
+      <a href="#"><span id="like" class="material-symbols-outlined">
+
+favorite
+
+</span>
+
+<span class="count">0</span>
+
+</a>
 
      
-   </div>
+
+    </div>
+
+  </div>
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col">
+
+        <h3>About Us</h3>
+
+        <p style="
+
+        width:300px;
+
+        ">
+
+Ellen G. White (1827-1915) was an American Christian author and co-founder of the Seventh-day Adventist Church. She was born in Gorham, Maine, and raised in a Methodist family. At the age of 13, she experienced a traumatic injury that left her unconscious for several weeks. During this time, she had a series of visions that she believed were from God.
+
+Throughout her life, Ellen G. White claimed to have received over 2,000 visions and dreams. She saw her role as a messenger of God, and her writings are considered by Seventh-day Adventists to be inspired by God.
+
+In the 1840s, Ellen G. White became involved in the Millerite movement, a group of Christians who believed that the Second Coming of Jesus Christ was imminent. When the predicted date for the Second Coming passed without event, many Millerites were disappointed and disillusioned. However, Ellen G. White continued to have visions and began to develop a theology that would later become the basis for the Seventh-day Adventist Church.
+
+In 1863, the Seventh-day Adventist Church was officially founded, with Ellen G. White and her husband James White as two of its co-founders. Ellen G. White's writings, including her most famous book "The Great Controversy," continue to be widely read by Seventh-day Adventists today.
+
+Despite her influence on the Seventh-day Adventist Church, Ellen G. White's life and teachings have been the subject of controversy. Some critics have accused her of plagiarism and questioned the validity of her visions. However, many Seventh-day Adventists consider her to be a prophet and continue to hold her writings in high regard.
+
+</p>
+
+      </div>
+
+      <div class="col">
+
+        <h3>Contact Us</h3>
+
+        <p>Zambia<br>Lusaka<br> thetruth.rev.1@gmail.com<br> (+260)976221533</p>
+
+      </div>
+
+      <div class="col">
+
+        <h3>Follow Us</h3>
+
+        <ul class="social-media">
+
+          <li><a href="https://chat.whatsapp.com/EjzsRmgRZRDB0t5Sga0q9U">Whatsup</i></a></li>
+
+         
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  
+
+</footer>
+
+<script>
+
+  let commentCon = document.querySelector('#commentCon');
+
+  let likeBtn = document.querySelector('#like');
+
+    let count = document.querySelector('.count');
+
+   
+
+  let countUp = 0;
+
+  let likeStatus = null;
+
+  let commentBtn = document.querySelector('#comment');
+
+ 
+
+  likeBtn.addEventListener('click',function () {
+
+    
+
+    if(likeStatus === 'liked') {
+
+      this.style.color = 'red'
+
+      likeStatus = 'like'
+
+      
+
+       count.innerText = countUp;
+
+       countUp -= 1;
+
+    }else {
+
+      this.style.color = 'blue';
+
+      likeStatus = 'liked'
+
+        count.innerText = countUp;
+
+       countUp += 1;
+
+     
+
+    }
+
+  })
+
+  
+
+    
+
+  
+
+ 
+
+    
+
+</script>
+
   </body>
+
 </html>
