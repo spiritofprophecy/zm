@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two-Column Bible Passage</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.column {
+			flex-basis: 48%;
+		}
+
+		h1 {
+			font-size: 20px;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 10px;
+			font-size: 16px;
+			line-height: 1.4;
+		}
+
+		.commandments {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			counter-reset: list-counter;
+		}
+
+		.commandments li:before {
+			content: counter(list-counter) ". ";
+			counter-increment: list-counter;
+			font-weight: bold;
+			margin-right: 5px;
+		}
+
+		.unchanging {
+			font-style: italic;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="column">
+			<h1>God</h1>
+			<ol class="commandments">
+				<li><p>1. Thou shalt have no other gods before me.</p></li>
+				<li><p>2. Thou shalt not make unto thee any graven image.</p></li>
+				<li><p>3. Thou shalt not take the name of the Lord thy God in vain.</p></li>
+				<li><p>4. Remember the sabbath day, to keep it holy.</p></li>
+			</ol>
+			<p class="unchanging">"For ever, O Lord, thy word is settled in heaven." - Psalm 119:89</p>
+		</div>
+		<div class="column">
+			<h1>Man</h1>
+			<ol class="commandments">
+				<li><p>5. Honour thy father and thy mother.</p></li>
+				<li><p>6. Thou shalt not kill.</p></li>
+				<li><p>7. Thou shalt not commit adultery.</p></li>
+				<li><p>8. Thou shalt not steal.</p></li>
+				<li><p>9. Thou shalt not bear false witness against thy neighbour.</p></li>
+				<li><p>10. Thou shalt not covet.</p></li>
+			</ol>
+			<p class="unchanging">"My covenant will I not break, nor alter the thing that is gone out of my lips." - Psalm 89:34</p>
+		</div>
+	</div>
+</body>
+</html>
