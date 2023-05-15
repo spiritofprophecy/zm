@@ -546,53 +546,63 @@ Despite her influence on the Seventh-day Adventist Church, Ellen G. White's life
 
 <script>
 
-  let commentCon = document.querySelector('#commentCon');
+let commentCon = document.querySelector('#commentCon');
 
-  let likeBtn = document.querySelector('#like');
+let likeBtn = document.querySelector('#like');
 
-    let count = document.querySelector('.count');
+let count = document.querySelector('.count');
 
-   
+let countUp = parseInt(localStorage.getItem('likes')) || 0; // Initialize countUp from localStorage or default to 0
 
-  let countUp = 6;
+let likeStatus = localStorage.getItem('likeStatus'); // Retrieve liked status from localStorage
 
-  let likeStatus = null;
+let commentBtn = document.querySelector('#comment');
 
-  let commentBtn = document.querySelector('#comment');
+// Update like button color and count based on initial likeStatus
+
+if (likeStatus === 'liked') {
+
+  likeBtn.style.color = 'blue';
+
+} else {
+
+  likeBtn.style.color = 'red';
+
+}
+
+count.innerText = countUp;
+
+likeBtn.addEventListener('click', function () {
+
+  if (likeStatus === 'liked') {
+
+    this.style.color = 'blue';
+
+    likeStatus = 'like';
+
+    countUp -= 1;
+
+  } else {
+
+    this.style.color = 'red';
+
+    likeStatus = 'liked';
+
+    countUp += 1;
+
+  }
+
+  count.innerText = countUp;
+
+  localStorage.setItem('likes', countUp.toString()); // Save countUp to localStorage
+
+  localStorage.setItem('likeStatus', likeStatus); // Save likeStatus to localStorage
+
+});
 
  
 
-  likeBtn.addEventListener('click',function () {
 
-    
-
-    if(likeStatus === 'liked') {
-
-      this.style.color = 'red'
-
-      likeStatus = 'like'
-
-      
-
-       count.innerText = countUp;
-
-       countUp -= 1;
-
-    }else {
-
-      this.style.color = 'blue';
-
-      likeStatus = 'liked'
-
-        count.innerText = countUp;
-
-       countUp += 1;
-
-     
-
-    }
-
-  })
 
   
 
