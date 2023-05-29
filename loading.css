@@ -1,0 +1,19 @@
+.loading{
+  position: fixed;
+  z-index: 999;
+  width:100%;
+  height:100%;
+  top:0;
+  background-color: black ;
+  color:gray;
+  font-family: cursive;
+  text-align: center;
+  }
+  .load{
+    border:5px solid #63e89b;
+    border-radius:20px;
+    width:100%;
+  }
+  h3{
+    font-family:arial;
+  }
