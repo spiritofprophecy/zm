@@ -6,7 +6,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="Bible.css" />
   <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
 
+    .grid div {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .grid div:nth-child(2n) {
+      background-color: #e1e1e1;
+    }
+
+    .grid div:nth-child(3n) {
+      background-color: #d1d1d1;
+    }
   </style>
 </head>
 <body>
@@ -17,50 +35,77 @@
     Tracks
   </div>
   <div class="grid">
-    <div>
+    <div style="background-color: #FFCCCC;">
       <a href="track1.pdf" download="Track 1">
         <img src="track1.png" alt="Track 1">
-        
       </a>
+    </div>
+    <div style="background-color: #CCFFCC;">
       <a href="track2.pdf" download="Track 2">
         <img src="track2.png" alt="Track 2">
       </a>
+    </div>
+    <div style="background-color: #CCCCFF;">
       <a href="track3.pdf" download="Track 3">
         <img src="track3.png" alt="Track 3">
       </a>
+    </div>
+    <div style="background-color: #FFCCFF;">
       <a href="track4.pdf" download="Track 4">
         <img src="track4.png" alt="Track 4">
       </a>
+    </div>
+    <div style="background-color: #FFFFCC;">
       <a href="track5.pdf" download="Track 5">
         <img src="track5.png" alt="Track 5">
       </a>
+    </div>
+    <div style="background-color: #CCFFFF;">
       <a href="track6.pdf" download="Track 6">
         <img src="track6.png" alt="Track 6">
       </a>
+    </div>
+    <div style="background-color: #FFCC99;">
       <a href="track7.pdf" download="Track 7">
         <img src="track7.png" alt="Track 7">
       </a>
+    </div>
+    <div style="background-color: #99FFCC;">
       <a href="track8.pdf" download="Track 8">
         <img src="track8.png" alt="Track 8">
       </a>
+    </div>
+    <div style="background-color: #FF99CC;">
       <a href="track9.pdf" download="Track 9">
         <img src="track9.png" alt="Track 9">
       </a>
+    </div>
+    <div style="background-color: #99CCFF;">
       <a href="track10.pdf" download="Track 10">
         <img src="track10.png" alt="Track 10">
       </a>
+    </div>
+    <div style="background-color: #FF99FF;">
       <a href="track11.pdf" download="Track 11">
         <img src="track11.png" alt="Track 11">
       </a>
+    </div>
+    <div style="background-color: #99FFFF;">
       <a href="track12.pdf" download="Track 12">
         <img src="track12.png" alt="Track 12">
       </a>
+    </div>
+    <div style="background-color: #FFCCCC;">
       <a href="track13.pdf" download="Track 13">
         <img src="track13.png" alt="Track 13">
       </a>
+    </div>
+    <div style="background-color: #CCFFCC;">
       <a href="track14.pdf" download="Track 14">
         <img src="track14.png" alt="Track 14">
       </a>
+    </div>
+    <div style="background-color: #CCCCFF;">
       <a href="track15.pdf" download="Track 15">
         <img src="track15.png" alt="Track 15">
       </a>
@@ -68,3 +113,5 @@
   </div>
 </body>
 </html>
+
+
