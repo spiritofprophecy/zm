@@ -3,21 +3,32 @@ const content = [{
   heading:'Free literature',
   important:'Only available in Zambia',
   post:"That everyone who thirsteth for the truth may obtain it, this tract is given free of charge.  It levies one exaction, the soul's obligation to itself to prove all things and hold fast that which is good.  The only strings attached to this free proffer are1 the golden strands of Eden and the crimson cords of Calvary -- the ties that bind.  Contact me if you want one from where ever you are",
-day:'2 weeks ago'
+day:'2 Months ago'
 },{
   img:'unknown.png',
   heading:"What's new",
   important:'',
   post:'Join our WhatsApp spirit of prophecy group. We share good and profitable bible studies. join us using the WhatsApp link below 👇',
-  day:"1 week ago"
+  day:"1 Month ago"
 },
 {
   img:'unknown.png',
   heading:'Don\'t be deceived',
   important:'',
   post:"Many are deceiving themselves by thinking that the character will be transformed at the coming of Christ, but there will be no conversion of heart at His appearing. Our defects of character must here be repented of, and through the grace of Christ we must overcome them while probation shall last. This is the place for fitting up for the family above.10The Signs of the Times, November 14, 1892. - AH 319.2",
-  day:"1 day ago"
-}];
+  day:"1 week ago"
+},{
+  img:'unknown.png',
+  heading:'Sabbath Day',
+  important:'9th June',
+  post:"Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work:
+
+But the seventh day is the sabbath of the LORD thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates:
+
+For in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it.'
+
+",
+day:'1 minute ago'}];
 
 
 
