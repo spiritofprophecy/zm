@@ -22,7 +22,7 @@ day:'2 Months ago'
   heading:'Sabbath Day',
   important:'9th June',
   post:"Exo 20:8 Remember the sabbath day, to keep it holy.Exo 20:10 But the seventh day [is] the sabbath of the LORD thy God: [in it] thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that [is] within thy gates:Exo 20:11 For [in] six days the LORD made heaven and earth, the sea, and all that in them [is], and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it.",
-  day:'1 minute ago'}];
+  day:'2 months ago'}];
 
 
 
